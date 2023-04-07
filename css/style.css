@@ -53,3 +53,12 @@ button[type="submit"] {
   font-size: 16px;
   cursor: pointer;
 }
+.result {
+  margin-top: 3rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.result h2 {
+  margin: 0;
+}
