@@ -1,0 +1,32 @@
+:root {
+  --primary: #614acf;
+  --font: #151515;
+}
+
+* {
+  margin: 0;
+  pading: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: var(--font);
+  max-height: 2000px;
+}
+.label-bmi h1 {
+  margin-top: 3rem;
+  align-items: center;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+.label-bmi h2 {
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
