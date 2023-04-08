@@ -4,6 +4,10 @@ function calculateBMI(event) {
   let weight = parseFloat(document.getElementById("weight").value);
   let height = parseFloat(document.getElementById("height").value);
 
+  if (isNaN(weight) || isNaN(height) || height <= 0 || weight <= 0) {
+    alert("Nilai yang dimasukan tidak boleh 0 dan minus");
+    return;
+  }
   let bmi = weight / (height / 100, 2);
 
   document.getElementById("bmi").textContent = bmi.toFixed(1);
