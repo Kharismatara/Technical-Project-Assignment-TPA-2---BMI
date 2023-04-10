@@ -8,7 +8,7 @@ function calculateBMI(event) {
         alert("The value entered cannot be 0 or minus");
         return;
     }
-    let bmi = weight / (height / 100, 2);
+    let bmi = weight / Math.pow(height / 100, 2);
 
     document.getElementById("bmi").textContent = bmi.toFixed(1);
 
