@@ -20,8 +20,10 @@ function calculateBMI(event) {
     bmiCategory = "Normal Weight";
   } else if (bmi < 30) {
     bmiCategory = "Overweight";
-  } else {
+  } else if (bmi < 1000) {
     bmiCategory = "Obesity";
+  } else {
+    bmiCategory = "check your input";
   }
 
   document.getElementById("bmiCategory").textContent = bmiCategory;
