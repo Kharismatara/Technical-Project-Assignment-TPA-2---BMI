@@ -6,12 +6,12 @@ function calculateBMI(event) {
 
   //pengecekan bahwa nilaiinput 0 /minus maka alare
   if (height <= 0 || weight <= 0) {
-    alert("input tidak valid. inputan harus positif dan tidak minus ");
+    alert("input must be positive and not minus");
     return;
     //kenapa  penggunakan tostring kkarena fungsi length hanya dapat digunakan pada objek bertipe string.
     //Kode yang Anda berikan menggunakan fungsi toString() untuk mengkonversi angka menjadi string sehingga dapat memeriksa panjang digit dari angka tersebut.
   } else if (weight.toString().length >= 4 || height.toString().length > 4) {
-    alert("Inputan untuk berat dan tinggi maksimal 3 angka.");
+    alert("Input for maximum weight and height of 3 numbers.");
     return;
 
     //agar tidak konversi di to strinng maka bisa memberikan nilai maksimal 1000
