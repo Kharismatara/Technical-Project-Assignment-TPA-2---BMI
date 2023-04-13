@@ -23,13 +23,15 @@
     </div>
     <form onsubmit="calculateBMI(event)">
       <label for="weight">Put your weight in here (KG)</label>
-      <input type="number" step="0.1" id="weight" name="weight" required placeholder="ex 40" />
+      <input type="number" id="weight" name="weight" required placeholder="ex 40" />
 
       <label for="height">And yur height in here (CM)</label>
-      <input type="number" step="0.1" id="height" name="height" required placeholder="ex 152" />
+      <input type="number" id="height" name="height" required placeholder="ex 152" />
 
-      <button type="submit">Calulator BMI</button>
+      <button id="cal" type="submit">Calulator BMI</button>
+      <button id="resetbmi" type="button" onclick=" reloadPage()">Reset BMI</button>
     </form>
+
     <div class="result" id="result" style="display: none">
       <h2>BMI Calculation Results</h2>
       <p>Your BMI is: <span id="bmi"></span></p>

@@ -10,15 +10,15 @@ function calculateBMI(event) {
     return;
     //kenapa  penggunakan tostring kkarena fungsi length hanya dapat digunakan pada objek bertipe string.
     //Kode yang Anda berikan menggunakan fungsi toString() untuk mengkonversi angka menjadi string sehingga dapat memeriksa panjang digit dari angka tersebut.
-  } else if (weight.toString().length >= 4 || height.toString().length > 4) {
+  } else if (weight.toString().length > 3 || height.toString().length > 3) {
     alert("Input for maximum weight and height of 3 numbers.");
     return;
-
-    //agar tidak konversi di to strinng maka bisa memberikan nilai maksimal 1000
-    // } else if (weight >= 1000 || height >= 1000) {
-    //   alert("Harap masukkan berat badan dan tinggi badan dengan nilai kurang dari 1000.");
-    //   return;
-  }
+  } //agar tidak konversi di to strinng maka bisa memberikan nilai maksimal 1000
+  //pada logiknya kita tidak ada tinggi lebih dari 300 cm  dan berat badan lebih dari 700
+  // else if (weight >= 700 || height > 300) {
+  //   alert("Harap masukkan berat badan dan tinggi badan dengan nilai kurang dari 700.");
+  //   return;
+  // }
 
   let bmi = weight / Math.pow(height / 100, 2);
 
@@ -38,4 +38,9 @@ function calculateBMI(event) {
 
   document.getElementById("bmiCategory").textContent = bmiCategory;
   document.getElementById("result").style.display = "block";
+}
+
+function reloadPage() {
+  // Menggunakan location.reload() untuk me-reload halaman web dari cache
+  location.reload();
 }
